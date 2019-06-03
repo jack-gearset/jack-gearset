@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Team --></label>
+        <name>Team__c</name>
+        <picklistValues>
+            <masterLabel>Catherine</masterLabel>
+            <translation><!-- Catherine --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ellis</masterLabel>
+            <translation><!-- Ellis --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Frank</masterLabel>
+            <translation><!-- Frank --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gabriel</masterLabel>
+            <translation><!-- Gabriel --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Jack</masterLabel>
+            <translation><!-- Jack --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Kevin</masterLabel>
+            <translation><!-- Kevin --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Steve</masterLabel>
+            <translation><!-- Steve --></translation>
+        </picklistValues>
+    </fields>
+    <caseValues>
+        <plural>false</plural>
+        <value>Team List</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Team Lists</value>
+    </caseValues>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>
