@@ -92,6 +92,26 @@
             <default>true</default>
         </values>
     </businessProcesses>
+    <businessProcesses>
+        <fullName>Process 2</fullName>
+        <isActive>true</isActive>
+        <values>
+            <fullName>Closed - Converted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Closed - Not Converted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Open - Not Contacted</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Working - Contacted</fullName>
+            <default>false</default>
+        </values>
+    </businessProcesses>
     <fields>
         <fullName>Address</fullName>
         <trackFeedHistory>false</trackFeedHistory>
@@ -282,6 +302,49 @@
     <fields>
         <fullName>Website</fullName>
         <trackFeedHistory>false</trackFeedHistory>
+    </fields>
+    <fields>
+        <fullName>DB_Created_Date_without_Time__c</fullName>
+        <description>This is a field that is installed by and used with the Adoption Dashboard AppExchange package. If your org already has a similar field, you can change the reports that are part of the Adoption Dashboard package to use your custom field and then delete this field.</description>
+        <externalId>false</externalId>
+        <formula>CreatedDate</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>DB Created Date without Time</label>
+        <required>false</required>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>DB_Lead_Age__c</fullName>
+        <description>This is a field that is installed by and used with the Adoption Dashboard AppExchange package. If your org already has a similar field, you can change the reports that are part of the Adoption Dashboard package to use your custom field and then delete this field.</description>
+        <externalId>false</externalId>
+        <formula>NOW() - LastModifiedDate</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>DB Lead Age</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Data_Quality_Description__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( Data_Quality_Score__c =100,"All Lead Details Captured", "Missing: "&amp;IF( LEN( FirstName)=0,"First Name, ","")&amp;""&amp;IF(LEN(LastName)=0, "Last Name, ","")&amp;""&amp;IF( LEN(Company)=0, "Company, ","")&amp;""&amp;IF( LEN(Phone)=0, "Phone, ","")&amp;""&amp;IF( ISPICKVAL(Salutation,""), "Salutation, ","")&amp;""&amp;IF( ISPICKVAL(Rating,""), "Rating, ","")&amp;""&amp;IF( LEN(City)=0, "Complete Address, ","")&amp;""&amp;IF( LEN(Email)=0, "Email",""))</formula>
+        <label>Data Quality Description</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Data_Quality_Score__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(LEN( FirstName ) = 0, 0,15) + IF(LEN( LastName ) = 0, 0,15) + IF(LEN( Company ) = 0, 0,15) + IF(LEN( Phone ) = 0, 0,15) + IF( ISPICKVAL( Salutation,""), 0,10) + IF( ISPICKVAL(Rating,""), 0,10) + IF( LEN( City ) = 0, 0,10) + IF( LEN( Email ) = 0, 0,10)</formula>
+        <label>Data Quality Score</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
     </fields>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
     <enableFeeds>true</enableFeeds>

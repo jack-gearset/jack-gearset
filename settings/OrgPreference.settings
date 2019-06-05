@@ -45,10 +45,6 @@
         <settingValue>false</settingValue>
     </preferences>
     <preferences>
-        <settingName>Packaging2</settingName>
-        <settingValue>false</settingValue>
-    </preferences>
-    <preferences>
         <settingName>DeleteMonitoringDataEnabled</settingName>
         <settingValue>false</settingValue>
     </preferences>
@@ -65,12 +61,8 @@
         <settingValue>true</settingValue>
     </preferences>
     <preferences>
-        <settingName>ExpandedSourceTrackingPref</settingName>
-        <settingValue>false</settingValue>
-    </preferences>
-    <preferences>
         <settingName>ScratchOrgManagementPref</settingName>
-        <settingValue>true</settingValue>
+        <settingValue>false</settingValue>
     </preferences>
     <preferences>
         <settingName>RemoveThemeBrandBanner</settingName>

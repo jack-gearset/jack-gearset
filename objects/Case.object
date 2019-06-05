@@ -378,6 +378,30 @@
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
     </fields>
+    <fields>
+        <fullName>Data_Quality_Description__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( Data_Quality_Score__c =100,"All Case Details Captured", "Missing: "&amp;IF( ISPICKVAL( Status,""),"Status, ","")&amp;""&amp;IF(ISPICKVAL( Type ,""), "Type, ","")&amp;""&amp;IF( ISPICKVAL( Origin ,""), "Origin, ","")&amp;""&amp;IF( ISPICKVAL( Reason ,""), "Reason, ","")&amp;""&amp;IF( ISPICKVAL( Priority ,""), "Priority, ","")&amp;""&amp;IF( LEN( Subject )&lt;5, "Meaningful Subject Line","")&amp;""&amp;IF( OR(LEN(ContactId)=0,LEN( AccountId)=0), "Associated Account and Contact",""))</formula>
+        <label>Data Quality Description</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Data_Quality_Score__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( OR(LEN(ContactId)=0,LEN( AccountId)=0), 0,10) + IF( ISPICKVAL( Status ,""), 0,15) + IF( ISPICKVAL( Type ,""), 0,15) + IF( ISPICKVAL( Origin ,""), 0,15) + IF( ISPICKVAL(   Reason ,""), 0,15) + IF(ISPICKVAL(Priority, ""),0,15) + IF(LEN( Subject )&lt;5,0,15)</formula>
+        <label>Data Quality Score</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
     <enableFeeds>true</enableFeeds>
     <searchLayouts>
