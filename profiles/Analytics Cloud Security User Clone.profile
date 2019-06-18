@@ -115,16 +115,8 @@
         <field>Account.DandbCompanyId</field>
         <readable>true</readable>
     </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Account.Data_Quality_Description__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Account.Data_Quality_Score__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
+    
+    
     <fieldPermissions>
         <editable>true</editable>
         <field>Account.Description</field>
@@ -1290,6 +1282,11 @@
         <field>User.DB_Region__c</field>
         <readable>true</readable>
     </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Account.X123__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
     <layoutAssignments>
         <layout>Account-Account Layout</layout>
     </layoutAssignments>
@@ -1444,6 +1441,39 @@
     </layoutAssignments>
     <layoutAssignments>
         <layout>X123__c-123 Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ConsumptionRate-Consumption Rate Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ConsumptionSchedule-Consumption Schedule Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Demo_field__c-Demo field Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Demo_object_1__c-Demo object 1 Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>DependencyTest__c-DependencyTest Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Frank_Demo_Object__c-Frank Demo Object Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Individual-Individual Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>List_team__c-Team List Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Logo__c-Logo Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ProductConsumptionSchedule-Product Consumption Schedule Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>TESTING__c-TESTING Layout</layout>
     </layoutAssignments>
     <objectPermissions>
         <allowCreate>false</allowCreate>
@@ -1748,6 +1778,10 @@
         <tab>standard-UserProvisioningRequest</tab>
         <visibility>Hidden</visibility>
     </tabVisibilities>
+    <tabVisibilities>
+        <tab>standard-Individual</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
     <userPermissions>
         <enabled>true</enabled>
         <name>ActivitiesAccess</name>
@@ -1799,5 +1833,9 @@
     <userPermissions>
         <enabled>true</enabled>
         <name>WorkDotComUserPerm</name>
+    </userPermissions>
+    <userPermissions>
+        <enabled>true</enabled>
+        <name>ViewDataLeakageEvents</name>
     </userPermissions>
 </Profile>
