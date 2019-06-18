@@ -73,9 +73,8 @@
         <apexClass>ChangePasswordControllerTest</apexClass>
         <enabled>true</enabled>
     </classAccesses>
-    
     <classAccesses>
-        <apexClass>FailingTests</apexClass>
+        <apexClass>EmailUtils</apexClass>
         <enabled>true</enabled>
     </classAccesses>
     <pageAccesses>
@@ -199,6 +198,7 @@
         <field>Account.CleanStatus</field>
         <readable>true</readable>
     </fieldPermissions>
+    
     <fieldPermissions>
         <editable>false</editable>
         <field>Account.DandbCompanyId</field>
@@ -1284,6 +1284,8 @@
         <field>Task.WhoId</field>
         <readable>true</readable>
     </fieldPermissions>
+    
+    
     <fieldPermissions>
         <editable>false</editable>
         <field>Account.Rating</field>
@@ -1607,11 +1609,6 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Account.X123__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Account.SLASerialNumber__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <layoutAssignments>
