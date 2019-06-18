@@ -80,24 +80,6 @@
                     <default>false</default>
                     <label>5</label>
                 </value>
-                <value>
-                    <fullName>1</fullName>
-                    <default>false</default>
-                    <isActive>false</isActive>
-                    <label>1</label>
-                </value>
-                <value>
-                    <fullName>3</fullName>
-                    <default>false</default>
-                    <isActive>false</isActive>
-                    <label>3</label>
-                </value>
-                <value>
-                    <fullName>4</fullName>
-                    <default>false</default>
-                    <isActive>false</isActive>
-                    <label>4</label>
-                </value>
             </valueSetDefinition>
         </valueSet>
         <visibleLines>4</visibleLines>

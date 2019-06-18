@@ -110,7 +110,6 @@
         <field>Account.CleanStatus</field>
         <readable>true</readable>
     </fieldPermissions>
-    
     <fieldPermissions>
         <editable>false</editable>
         <field>Account.DandbCompanyId</field>
@@ -1196,8 +1195,6 @@
         <field>Task.WhoId</field>
         <readable>true</readable>
     </fieldPermissions>
-    
-    
     <fieldPermissions>
         <editable>true</editable>
         <field>Campaign.DB_Campaign_Tactic__c</field>
@@ -1331,6 +1328,11 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Account.X123__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Account.SLASerialNumber__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <layoutAssignments>
