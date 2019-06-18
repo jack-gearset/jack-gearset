@@ -115,8 +115,6 @@
         <field>Account.DandbCompanyId</field>
         <readable>true</readable>
     </fieldPermissions>
-    
-    
     <fieldPermissions>
         <editable>true</editable>
         <field>Account.Description</field>
@@ -1285,6 +1283,11 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Account.X123__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Account.SLASerialNumber__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <layoutAssignments>
