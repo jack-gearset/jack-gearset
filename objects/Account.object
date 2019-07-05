@@ -319,37 +319,6 @@
         <label>123</label>
         <type>AutoNumber</type>
     </fields>
-    <fields>
-        <fullName>DiscountPercentage__c</fullName>
-        <externalId>false</externalId>
-        <formula>DiscountRate__c / 100</formula>
-        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
-        <label>DiscountPercentage</label>
-        <precision>18</precision>
-        <required>false</required>
-        <scale>2</scale>
-        <type>Currency</type>
-    </fields>
-    <fields>
-        <fullName>SLASerialNumber__c</fullName>
-        <externalId>false</externalId>
-        <label>SLA Serial Number</label>
-        <length>10</length>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <type>Text</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
-        <fullName>DiscountRate__c</fullName>
-        <externalId>false</externalId>
-        <label>DiscountRate</label>
-        <precision>18</precision>
-        <required>false</required>
-        <scale>0</scale>
-        <trackFeedHistory>false</trackFeedHistory>
-        <type>Currency</type>
-    </fields>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
     <enableFeeds>true</enableFeeds>
     <enableHistory>false</enableHistory>
