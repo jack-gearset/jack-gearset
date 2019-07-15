@@ -693,11 +693,7 @@
         <field>Contract.StartDate</field>
         <readable>true</readable>
     </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Demo_field__c.Team_List__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
+    
     <fieldPermissions>
         <editable>false</editable>
         <field>DependencyTest__c.Field_A__c</field>
