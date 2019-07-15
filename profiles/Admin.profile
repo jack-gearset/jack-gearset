@@ -65,9 +65,12 @@
         <apexClass>CustomSiteRegisterController</apexClass>
         <enabled>true</enabled>
     </classAccesses>
-    
     <classAccesses>
         <apexClass>ChangePasswordController</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>ChangePasswordControllerTest</apexClass>
         <enabled>true</enabled>
     </classAccesses>
     <pageAccesses>
@@ -781,11 +784,7 @@
         <field>Contract.StartDate</field>
         <readable>true</readable>
     </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Demo_field__c.Team_List__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
+    
     <fieldPermissions>
         <editable>false</editable>
         <field>DependencyTest__c.Field_A__c</field>
@@ -1589,6 +1588,11 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Account.X123__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Account.CustomerPriority__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <layoutAssignments>

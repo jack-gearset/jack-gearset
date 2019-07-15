@@ -363,6 +363,71 @@
         <trackFeedHistory>false</trackFeedHistory>
         <type>Currency</type>
     </fields>
+    <fields>
+        <fullName>CustomerPriority__c</fullName>
+        <externalId>false</externalId>
+        <label>Customer Priority</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>Industry</controllingField>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>High</fullName>
+                    <default>false</default>
+                    <label>High</label>
+                </value>
+                <value>
+                    <fullName>Low</fullName>
+                    <default>false</default>
+                    <label>Low</label>
+                </value>
+                <value>
+                    <fullName>Medium</fullName>
+                    <default>false</default>
+                    <label>Medium</label>
+                </value>
+            </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>Agriculture</controllingFieldValue>
+                <controllingFieldValue>Apparel</controllingFieldValue>
+                <controllingFieldValue>Banking</controllingFieldValue>
+                <controllingFieldValue>Biotechnology</controllingFieldValue>
+                <controllingFieldValue>Chemicals</controllingFieldValue>
+                <valueName>High</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Agriculture</controllingFieldValue>
+                <controllingFieldValue>Apparel</controllingFieldValue>
+                <controllingFieldValue>Banking</controllingFieldValue>
+                <controllingFieldValue>Biotechnology</controllingFieldValue>
+                <controllingFieldValue>Chemicals</controllingFieldValue>
+                <valueName>Low</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Agriculture</controllingFieldValue>
+                <controllingFieldValue>Apparel</controllingFieldValue>
+                <controllingFieldValue>Banking</controllingFieldValue>
+                <controllingFieldValue>Biotechnology</controllingFieldValue>
+                <controllingFieldValue>Chemicals</controllingFieldValue>
+                <valueName>Medium</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SalesDemoField__c</fullName>
+        <description>This is my new sales demo field</description>
+        <externalId>false</externalId>
+        <label>SalesDemoField</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
     <enableFeeds>true</enableFeeds>
     <enableHistory>false</enableHistory>
