@@ -3,13 +3,4 @@
         <label><!-- Team List --></label>
         <name>Team_List__c</name>
     </fields>
-    <caseValues>
-        <plural>false</plural>
-        <value>Demo field</value>
-    </caseValues>
-    <caseValues>
-        <plural>true</plural>
-        <value>Demo fields</value>
-    </caseValues>
-    <startsWith>Consonant</startsWith>
 </CustomObjectTranslation>
