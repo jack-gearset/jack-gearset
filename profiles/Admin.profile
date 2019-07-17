@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?><Profile xmlns="http://soap.sforce.com/2006/04/metadata">
+<?xml version="1.0" encoding="utf-8"?><Profile xmlns="http://soap.sforce.com/2006/04/metadata">
     <custom>false</custom>
     <userLicense>Salesforce</userLicense>
     <classAccesses>
@@ -25,7 +25,6 @@
         <apexClass>LIFXControllerTest</apexClass>
         <enabled>true</enabled>
     </classAccesses>
-    
     <classAccesses>
         <apexClass>PostPriceChangeToSlack</apexClass>
         <enabled>true</enabled>
@@ -62,8 +61,14 @@
         <apexClass>CustomSiteRegisterController</apexClass>
         <enabled>true</enabled>
     </classAccesses>
-    
-    
+    <classAccesses>
+        <apexClass>ChangePasswordController</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>ChangePasswordControllerTest</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
     <pageAccesses>
         <apexPage>DreamHouseSampleData</apexPage>
         <enabled>true</enabled>
@@ -552,11 +557,6 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Case.Product__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
         <field>Case.Reason</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -775,7 +775,6 @@
         <field>Contract.StartDate</field>
         <readable>true</readable>
     </fieldPermissions>
-    
     <fieldPermissions>
         <editable>false</editable>
         <field>DependencyTest__c.Field_A__c</field>
@@ -1581,7 +1580,16 @@
         <field>Account.X123__c</field>
         <readable>true</readable>
     </fieldPermissions>
-    
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Account.SLASerialNumber__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Case.Product__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
     <layoutAssignments>
         <layout>Account-Account Layout</layout>
     </layoutAssignments>
