@@ -31,13 +31,4 @@
             <translation><!-- Steve --></translation>
         </picklistValues>
     </fields>
-    <caseValues>
-        <plural>false</plural>
-        <value>Team List</value>
-    </caseValues>
-    <caseValues>
-        <plural>true</plural>
-        <value>Team Lists</value>
-    </caseValues>
-    <startsWith>Consonant</startsWith>
 </CustomObjectTranslation>

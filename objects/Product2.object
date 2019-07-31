@@ -49,18 +49,6 @@
         <trackHistory>false</trackHistory>
     </fields>
     <fields>
-        <fullName>Discount_Rate__c</fullName>
-        <defaultValue>0</defaultValue>
-        <externalId>false</externalId>
-        <label>Discount Rate</label>
-        <precision>5</precision>
-        <required>true</required>
-        <scale>2</scale>
-        <trackHistory>false</trackHistory>
-        <type>Number</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
         <fullName>DisplayUrl</fullName>
         <trackHistory>false</trackHistory>
     </fields>
@@ -81,35 +69,6 @@
     <fields>
         <fullName>IsActive</fullName>
         <trackHistory>false</trackHistory>
-    </fields>
-    <fields>
-        <fullName>License__c</fullName>
-        <externalId>false</externalId>
-        <label>License</label>
-        <required>false</required>
-        <trackHistory>false</trackHistory>
-        <type>MultiselectPicklist</type>
-        <valueSet>
-            <valueSetDefinition>
-                <sorted>false</sorted>
-                <value>
-                    <fullName>Free</fullName>
-                    <default>true</default>
-                    <label>Free</label>
-                </value>
-                <value>
-                    <fullName>Pro</fullName>
-                    <default>false</default>
-                    <label>Pro</label>
-                </value>
-                <value>
-                    <fullName>Enterprise</fullName>
-                    <default>false</default>
-                    <label>Enterprise</label>
-                </value>
-            </valueSetDefinition>
-        </valueSet>
-        <visibleLines>3</visibleLines>
     </fields>
     <fields>
         <fullName>Name</fullName>

@@ -11,13 +11,4 @@
         <label><!-- USD --></label>
         <name>USD__c</name>
     </fields>
-    <caseValues>
-        <plural>false</plural>
-        <value>DependencyTest</value>
-    </caseValues>
-    <caseValues>
-        <plural>true</plural>
-        <value>DependencyTest</value>
-    </caseValues>
-    <startsWith>Consonant</startsWith>
 </CustomObjectTranslation>

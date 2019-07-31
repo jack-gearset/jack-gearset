@@ -88,13 +88,4 @@
         <searchResultsAdditionalFields>LastModifiedBy</searchResultsAdditionalFields>
     </searchLayouts>
     <sharingModel>Private</sharingModel>
-    <listViews>
-        <fullName>X12_Macro</fullName>
-        <filterScope>Queue</filterScope>
-        <label>22</label>
-        <queue>X12</queue>
-        <sharedTo>
-            <allInternalUsers></allInternalUsers>
-        </sharedTo>
-    </listViews>
 </CustomObject>

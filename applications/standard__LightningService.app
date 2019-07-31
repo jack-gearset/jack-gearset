@@ -7,7 +7,6 @@
     <navType>Console</navType>
     <setupExperience>service</setupExperience>
     <tabs>standard-Case</tabs>
-    <tabs>LP001</tabs>
     <tabs>standard-Contact</tabs>
     <tabs>standard-Account</tabs>
     <tabs>standard-report</tabs>
@@ -16,9 +15,6 @@
     <uiType>Lightning</uiType>
     <utilityBar>LightningService_UtilityBar</utilityBar>
     <workspaceConfig>
-        <mappings>
-            <tab>LP001</tab>
-        </mappings>
         <mappings>
             <tab>standard-Account</tab>
         </mappings>

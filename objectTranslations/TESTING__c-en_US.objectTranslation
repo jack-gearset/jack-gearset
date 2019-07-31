@@ -11,13 +11,4 @@
         <label><!-- tracking --></label>
         <name>tracking__c</name>
     </fields>
-    <caseValues>
-        <plural>false</plural>
-        <value>TESTING</value>
-    </caseValues>
-    <caseValues>
-        <plural>true</plural>
-        <value>TESTING</value>
-    </caseValues>
-    <startsWith>Consonant</startsWith>
 </CustomObjectTranslation>

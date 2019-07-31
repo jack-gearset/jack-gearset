@@ -41,6 +41,10 @@
         <type>CustomApplication</type>
     </appMenuItems>
     <appMenuItems>
+        <name>standard__Insights</name>
+        <type>CustomApplication</type>
+    </appMenuItems>
+    <appMenuItems>
         <name>standard__LightningSalesConsole</name>
         <type>CustomApplication</type>
     </appMenuItems>
@@ -57,7 +61,7 @@
         <type>CustomApplication</type>
     </appMenuItems>
     <appMenuItems>
-        <name>DreamHouse</name>
+        <name>standard__LightningBolt</name>
         <type>CustomApplication</type>
     </appMenuItems>
 </AppMenu>

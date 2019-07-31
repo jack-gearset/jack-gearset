@@ -217,58 +217,6 @@
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
     </fields>
-    <fields>
-        <fullName>DB_Competitor__c</fullName>
-        <description>This is a field that is installed by and used with the Adoption Dashboard AppExchange package. If your org already has a similar field, you can change the reports that are part of the Adoption Dashboard package to use your custom field and can delete this field.</description>
-        <externalId>false</externalId>
-        <label>DB Competitor</label>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackTrending>false</trackTrending>
-        <type>Picklist</type>
-        <valueSet>
-            <valueSetDefinition>
-                <sorted>false</sorted>
-                <value>
-                    <fullName>Competitor A</fullName>
-                    <default>false</default>
-                    <label>Competitor A</label>
-                </value>
-                <value>
-                    <fullName>Competitor B</fullName>
-                    <default>false</default>
-                    <label>Competitor B</label>
-                </value>
-                <value>
-                    <fullName>Competitor C</fullName>
-                    <default>false</default>
-                    <label>Competitor C</label>
-                </value>
-            </valueSetDefinition>
-        </valueSet>
-    </fields>
-    <fields>
-        <fullName>Data_Quality_Description__c</fullName>
-        <externalId>false</externalId>
-        <formula>IF( Data_Quality_Score__c =100,"All Opportunity Details Captured", "Missing: "&amp;IF( ISPICKVAL( Type ,""),"Type, ","")&amp;""&amp;IF(LEN( TEXT(MONTH(CloseDate))) = 0, "Close Date, ","")&amp;""&amp;IF( Amount &lt;= 0, "Amount, ","")&amp;""&amp;IF( ISPICKVAL( LeadSource,""), "Lead Source, ","")&amp;""&amp;IF( LEN(NextStep)=0, "Next Steps",""))</formula>
-        <label>Data Quality Description</label>
-        <required>false</required>
-        <trackTrending>false</trackTrending>
-        <type>Text</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
-        <fullName>Data_Quality_Score__c</fullName>
-        <externalId>false</externalId>
-        <formula>IF( ISPICKVAL(Type,""), 0,20) + IF( LEN( TEXT(MONTH(CloseDate))) = 0, 0,20) + IF( Amount &lt;= 0, 0,20) + IF( ISPICKVAL( LeadSource,""), 0,20) + IF( LEN(NextStep)=0, 0,20)</formula>
-        <label>Data Quality Score</label>
-        <precision>18</precision>
-        <required>false</required>
-        <scale>0</scale>
-        <trackTrending>false</trackTrending>
-        <type>Number</type>
-        <unique>false</unique>
-    </fields>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
     <enableFeeds>true</enableFeeds>
     <enableHistory>false</enableHistory>
